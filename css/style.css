@@ -1,3 +1,9 @@
+body {
+    font-size: 50px;
+}
+
+/* navbar */
+
 header {
     display: flex;
     height: 110px;
@@ -24,6 +30,8 @@ nav {
     background-color: red;
 }
 
+/* featured articles */
+
 .featured-articles-container {
     display: flex;
     flex-wrap: wrap;
@@ -45,19 +53,25 @@ nav {
 
 @media screen and (min-width: 1920px){
     .featured-article {
-        width: 32.33%;
+        float: left;
+        width: 33.33%;
+    }
+
+    .article-4 {
+        display: none;
     }
 }
+
+/* latest posts */
 
 .latest-posts {
     display: flex;
     flex-wrap: wrap;
-    background-color: mediumpurple;
 }
 
 .latest-posts-article {
     height: 200px;
-    width: 20%;
+    width: 50%;
     background-color: navy;
 }
 
@@ -106,5 +120,76 @@ nav {
 @media screen and (min-width: 1450px) {
     .cat-tv {
         width: 50%;
+    }
+}
+
+/* configure container */
+
+.configure-container {
+    height: 500px;
+    background-color: blueviolet;
+}
+
+/* curate articles container */
+
+.curate-articles-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-headline {
+    width: 100%;
+    height: 200px;
+    background-color: burlywood;
+}
+
+.curate-article {
+    width: 100%;
+    height: 150px;
+    background-color: cadetblue;
+}
+
+@media screen and (min-width: 1024px) {
+    .curate-article {
+        width: 50%;
+    }
+}
+
+/* links container */
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links-article {
+    width: 100%;
+    height: 200px;
+    background-color: chartreuse;
+}
+
+@media screen and (min-width: 668px) {
+    .links-article {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .links-article {
+        width: 33.33333%;
+    }
+
+    .cat-music {
+        width: 66.66%;
+    }
+}
+
+@media (min-width: 1450px) {
+    .links-article {
+        width: 25%;
+    }
+
+    .cat-music {
+        width: 100%
     }
 }
