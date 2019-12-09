@@ -558,11 +558,83 @@ main {
 .links-container {
     display: flex;
     flex-wrap: wrap;
+    font-family: helvetica, arial, sans-serif;
+    margin: 0 5%;
+}
+
+.links-container h2 {
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.links-container a {
+    display: inline;
+    text-align: left;
+    font-size: 0.6em;
+    text-decoration: underline;
+    color: steelblue;
+}
+
+.links-container li {
+    margin: 10px 10px;
+}
+
+.links-container ul {
+    padding-left: 54px;
+    margin-bottom: 50px;
+    list-style-type: disc;
 }
 
 .links-article {
+    padding: 0 15px;
+}
+
+.cat-music p {
+    font-size: 0.65em;
+    width: 40%;
+}
+
+.cat-music img {
     width: 100%;
-    
+}
+
+.cat-music a {
+    width: 450px;
+    height: 550px;
+    max-width: 80%;
+    margin: 40px 0;
+}
+
+.cat-music form {
+    display: flex;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.cat-music input {
+    height: 55px;
+    font-size: 0.7em;
+    border: none;
+}
+
+input[type="text"] {
+    font-size: 0.6em;
+    padding-left: 20px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+input[type="button"]{
+    font-family: inherit;
+    border-left: solid 1px gray;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: white;
+    padding: 0 25px;
+}
+
+input[type="button"]:hover {
+    cursor: pointer;
 }
 
 @media screen and (min-width: 668px) {
