@@ -2,7 +2,7 @@ body {
     font-size: 15px;
 }
 
-article, div, .footer, .see-articles {
+.footer, .see-articles {
     padding: 30px 20px;
     display: flex;
     justify-content: center;
@@ -23,13 +23,72 @@ header {
 
 nav {
     flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 80px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+nav li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.animatable-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    transform-origin: bottom left;
+    transform: rotate(-20deg);
+    transition: transform 0.4s ease-out;
+}
+
+.navbar-icons {
+    width: 60px;
+    height: 60px;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover .navbar-icons {
+    transform: rotate(0deg);
+}
+
+.navbar-icons img {
+    flex: none;
+    transform: rotate(20deg);
+    transition: transform 0.4s ease-out;
+}
+
+nav a:hover img {
+    transform: rotate(0deg);
+}
+
+nav a:hover span {
+    color: white;
 }
 
 .menu-trigger {
     display: block;
     width: 8%;
-    
+    margin: auto;
 }
 
 /* featured articles */
@@ -37,7 +96,12 @@ nav {
 .featured-articles-container {
     display: flex;
     flex-wrap: wrap;
-    
+    font-size: 60px;
+    line-height: 72px;
+}
+
+.featured-article {
+    padding: 3% 2%;
 }
 
 .article-1, .article-4 {
@@ -52,13 +116,35 @@ nav {
     background-color: #696969;
 }
 
-.featured-articles-container * {
+.featured-articles-container {
     width: 100%;
 }
 
 .featured-articles-container {
     display: grid;
-    grid-template-columns: repeat(1fr,4);
+    grid-template-columns: repeat(1fr, 4);
+}
+
+.article-icons {
+    align-self: flex-start;
+    width: 100px;
+    height: 100px;
+    margin: 0 0 20px 30px;
+    border-radius: 10px;
+}
+
+.article-icons img {
+    flex: none;
+    transform: rotate(20deg);
+    transition: transform 0.4s ease-out;
+}
+
+.article-icons:hover {
+    transform: rotate(0deg);
+}
+
+.article-icons:hover img {
+    transform: rotate(0deg);
 }
 
 @media screen and (min-width: 768px) {
