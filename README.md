@@ -17,7 +17,7 @@ One has to download it and run the index.html in the browser.
 ## Authors
 
 * **Jaak Kivinukk** - *Initial work* - [Jaakal](https://github.com/Jaakal)
-* **Lucas Mazo** - *Initial work* - [Jaakal](https://github.com/lucasmazo32)
+* **Lucas Mazo** - *Initial work* - [lucasmazo32](https://github.com/lucasmazo32)
 
 ## License
 
