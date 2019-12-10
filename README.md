@@ -4,7 +4,7 @@ This is a layout clone of the webpage https://www.smashingmagazine.com/
 
 ## Screenshot
 
-![Screenshot of the webpage](https://github.com/Jaakal/design-teardown/blob/apple/screenshot.png)
+![Screenshot of the webpage](https://github.com/Jaakal/design-teardown/blob/design/screenshot.png)
 
 ## Getting Started
 
