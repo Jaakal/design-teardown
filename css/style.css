@@ -8,6 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 40px 0;
 }
 
 /* navbar */
@@ -79,10 +80,49 @@ nav a:hover .navbar-icons {
   transform: rotate(0deg);
 }
 
+.menu-trigger {
+  display: flex;
+  width: 8%;
+  margin: auto 1% auto auto;
+  align-items: center;
+}
+
 .navbar-icons img {
   flex: none;
   transform: rotate(20deg);
   transition: transform 0.4s ease-out;
+}
+
+.menu-trigger img {
+  width: 100%;
+}
+
+.article-icons img {
+  flex: none;
+  transform: rotate(20deg);
+  transition: transform 0.4s ease-out;
+}
+
+.cat img {
+  width: 25%;
+  margin-bottom: 25px;
+}
+
+.configure-container img {
+  max-width: 80%;
+}
+
+.configure-icon img {
+  flex: none;
+  max-width: 400px;
+  width: 400px;
+  height: 400px;
+  transform: rotate(20deg);
+  transition: transform 0.4s ease-out;
+}
+
+.cat-music img {
+  width: 100%;
 }
 
 nav a:hover img {
@@ -93,25 +133,7 @@ nav a:hover span {
   color: white;
 }
 
-.menu-trigger {
-  display: flex;
-  width: 8%;
-  margin: auto 1% auto auto;
-  align-items: center;
-}
-
-.menu-trigger img {
-  width: 100%;
-}
-
 /* featured articles */
-
-.featured-articles-container {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 1.4em;
-  line-height: 72px;
-}
 
 .featured-article {
   display: flex;
@@ -134,9 +156,8 @@ nav a:hover span {
 
 .featured-articles-container {
   width: 100%;
-}
-
-.featured-articles-container {
+  font-size: 1.4em;
+  line-height: 72px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
@@ -147,12 +168,6 @@ nav a:hover span {
   height: 100px;
   margin: 20px 0 20px 30px;
   border-radius: 10px;
-}
-
-.article-icons img {
-  flex: none;
-  transform: rotate(20deg);
-  transition: transform 0.4s ease-out;
 }
 
 .article-icons:hover {
@@ -245,8 +260,17 @@ main {
   line-height: 1.3em;
 }
 
+footer p {
+  width: 50%;
+  margin: 50px 0 40px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1.6em;
+  line-height: 1.6em;
+}
+
 .latest-posts p {
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   font-size: 0.8em;
   font-weight: 400;
   line-height: 1.7em;
@@ -281,16 +305,22 @@ main {
   text-align: center;
 }
 
-.cat img {
-  width: 25%;
-  margin-bottom: 25px;
-}
-
 .cat button {
   font-size: 1em;
   padding: 20px 30px;
   margin-top: 40px;
   border-radius: 6px;
+}
+
+.configure-container button {
+  font-size: 1.1em;
+  padding: 20px 30px;
+  margin-bottom: 40px;
+  border-radius: 6px;
+}
+
+.configure-container button:hover {
+  cursor: pointer;
 }
 
 .cat button:hover {
@@ -363,25 +393,10 @@ main {
   max-width: 80%;
   width: 1000px;
   margin-bottom: 50px;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   font-size: 0.8em;
   font-weight: 400;
   line-height: 1.7em;
-}
-
-.configure-container button {
-  font-size: 1.1em;
-  padding: 20px 30px;
-  margin-bottom: 40px;
-  border-radius: 6px;
-}
-
-.configure-container button:hover {
-  cursor: pointer;
-}
-
-.configure-container img {
-  max-width: 80%;
 }
 
 /* curate articles container */
@@ -406,7 +421,7 @@ main {
   display: flex;
   width: 100%;
   margin: 50px auto 0 auto;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
 }
 
 .main-headline .main-icon {
@@ -414,6 +429,14 @@ main {
   height: 200px;
   margin: 60px 20px 0 0;
   border-radius: 12px;
+}
+
+.curate-article .sub-icon img {
+  flex: none;
+  width: 90px;
+  height: 90px;
+  transform: rotate(20deg);
+  transition: transform 0.4s ease-out;
 }
 
 .main-headline .main-icon img {
@@ -426,6 +449,10 @@ main {
 
 .main-headline .main-icon:hover {
   transform: rotate(0deg);
+}
+
+.configure-icon:hover img {
+  transform: rotate(0);
 }
 
 .main-headline .main-icon:hover img {
@@ -450,7 +477,7 @@ main {
   display: flex;
   width: 100%;
   margin: 20px auto 50px auto;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
 }
 
 .curate-article .sub-icon {
@@ -458,14 +485,6 @@ main {
   height: 70px;
   margin: 0 20px 0 0;
   border-radius: 5px;
-}
-
-.curate-article .sub-icon img {
-  flex: none;
-  width: 90px;
-  height: 90px;
-  transform: rotate(20deg);
-  transition: transform 0.4s ease-out;
 }
 
 .curate-article .sub-icon:hover {
@@ -524,6 +543,10 @@ main {
   width: 100%;
 }
 
+footer a {
+  display: inline;
+}
+
 .last-configure-container a {
   display: flex;
   justify-content: center;
@@ -536,20 +559,7 @@ main {
   border-radius: 12px;
 }
 
-.configure-icon img {
-  flex: none;
-  max-width: 400px;
-  width: 400px;
-  height: 400px;
-  transform: rotate(20deg);
-  transition: transform 0.4s ease-out;
-}
-
 .configure-icon:hover {
-  transform: rotate(0);
-}
-
-.configure-icon:hover img {
   transform: rotate(0);
 }
 
@@ -602,10 +612,6 @@ main {
 .cat-music p {
   font-size: 0.65em;
   width: 40%;
-}
-
-.cat-music img {
-  width: 100%;
 }
 
 .cat-music a {
@@ -675,17 +681,14 @@ input[type="button"]:hover {
 
 /* see all articles */
 
-.see-articles {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px 0;
-}
-
 .see-articles a {
   font-size: 0.8em;
   padding-bottom: 10px;
   border-bottom: 3px solid #696969;
+}
+
+footer ul:last-of-type li a {
+  text-decoration: underline;
 }
 
 .see-articles a:hover {
@@ -704,10 +707,6 @@ footer h4 {
   font-size: 2.2em;
   font-weight: 300;
   text-align: center;
-}
-
-footer a {
-  display: inline;
 }
 
 .footer-inner-wrapper {
@@ -734,7 +733,7 @@ footer ul:first-of-type li {
   line-height: 2.2em;
 }
 
-footer ul:first-of-type li:before {
+footer ul:first-of-type li::before {
   content: "•";
   margin: 0 0.25em 0 0.25em;
   display: inline-block;
@@ -742,15 +741,6 @@ footer ul:first-of-type li:before {
   font-size: calc(1em + ((0.4vw + 0.25vh) / 2));
   position: relative;
   top: 2px;
-}
-
-footer p {
-  width: 50%;
-  margin: 50px 0 40px 0;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  font-size: 1.6em;
-  line-height: 1.6em;
 }
 
 footer ul:last-of-type {
@@ -765,8 +755,4 @@ footer ul:last-of-type li {
   font-size: 1.6em;
   line-height: 1em;
   white-space: nowrap;
-}
-
-footer ul:last-of-type li a {
-  text-decoration: underline;
 }
