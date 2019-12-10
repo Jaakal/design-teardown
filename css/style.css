@@ -72,6 +72,13 @@ nav a:hover .navbar-icons {
   transform: rotate(0deg);
 }
 
+.menu-trigger {
+  display: flex;
+  width: 8%;
+  margin: auto 1% auto auto;
+  align-items: center;
+}
+
 .navbar-icons img {
   flex: none;
   transform: rotate(20deg);
@@ -146,11 +153,9 @@ nav a:hover span {
   color: white;
 }
 
-.menu-trigger {
-  display: flex;
-  width: 8%;
-  margin: auto 1% auto auto;
-  align-items: center;
+.cat img {
+  width: 25%;
+  margin-bottom: 25px;
 }
 
 /* featured articles */
@@ -162,6 +167,8 @@ nav a:hover span {
   font-size: 1.4em;
   line-height: 72px;
 }
+
+/* featured articles */
 
 .featured-article {
   display: flex;
