@@ -221,14 +221,17 @@ main {
     font-size: 3em;
 }
 
-.latest-posts {
+.latest-posts-wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 2%;
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .latest-posts-article {
     width: 50%;
+    margin-bottom: 2%;
 }
 
 .latest-posts-article h2 {
@@ -257,6 +260,8 @@ main {
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2%;
+    border-radius: 20px;
 }
 
 .cat h2 {
@@ -618,7 +623,7 @@ main {
 }
 
 input[type="text"] {
-    font-size: 0.6em;
+    font-size: 0.67em;
     padding-left: 20px;
     border-bottom-left-radius: 12px;
     border-top-left-radius: 12px;
